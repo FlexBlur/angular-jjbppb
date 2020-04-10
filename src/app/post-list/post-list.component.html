@@ -1,7 +1,6 @@
 <ul class="list-group">
-  <app-post-list-item *ngFor="let p of publisPL"
-                      [publisIT] = "publisPL"
-                      [titrePubliIT]="p.titrePubliPL"
-                      [contenuPubliIT]="p.contenuPubliPL"
-                      [datePubliIT]="p.datePubliPL"></app-post-list-item>
+  <app-post-list-item
+    *ngFor="let p of publisPL"
+    [publisIT] = "p">
+  </app-post-list-item>
 </ul>

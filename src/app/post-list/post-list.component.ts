@@ -5,18 +5,12 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './post-list.component.html',
   styleUrls: ['./post-list.component.css']
 })
-
 export class PostListComponent implements OnInit {
-
-  @Input() titrePubliPL: string;
-  @Input() contenuPubliPL: string;
-  @Input() datePubliPL: Date;
-  @Input() jadorePubliPL: number;
-  @Input() jeDetestePubliPL: number;
 
   @Input() publisPL;
 
   constructor() { }
 
   ngOnInit(): void { }
+
 }

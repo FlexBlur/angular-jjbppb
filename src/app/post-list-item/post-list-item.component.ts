@@ -8,25 +8,13 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export class PostListItemComponent implements OnInit {
 
-  @Input() titrePubliIT: string;
-  @Input() contenuPubliIT: string;
-  @Input() datePubliIT: Date;
-  @Input() jadorePubliIT: number;
-  @Input() jeDetestePubliIT: number;
-
   @Input() publisIT;
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
-  getTitrePubli() { return this.titrePubliIT; }
-  getContenuPubli() { return this.contenuPubliIT; }
-  getDatePubli() { return this.datePubliIT; }
-  getJadorePubli() { return this.jadorePubliIT; }
-  getJeDetestePubli() { return this.jeDetestePubliIT; }
+  onJadore() { this.publisIT.jadorePubli++; }
+  onJeDeteste() { this.publisIT.jeDetestePubli++; }
 
-  onJadore() { this.jadorePubliIT++; }
-  onJeDeteste() { this.jeDetestePubliIT++; }
 }
